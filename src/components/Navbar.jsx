@@ -65,7 +65,7 @@ const Navbar = () => {
             <a href="https://web.facebook.com/people/Malmi-Withanage/100075277897834/?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer">
               <img src={s1} alt="s1" className="w-8 h-8 cursor-pointer" />
             </a>
-            <a href="www.linkedin.com/in/malmi-withanage-ab3179265" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/malmi-withanage-ab3179265/?originalSubdomain=lk" target="_blank" rel="noopener noreferrer">
               <img src={s2} alt="s2" className="w-8 h-8 cursor-pointer" />
             </a>
             <a href="https://www.instagram.com/mei_nyx_/" target="_blank" rel="noopener noreferrer">
