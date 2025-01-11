@@ -1,4 +1,7 @@
 import React from "react";
+import { saveAs } from "file-saver"; // Import the saveAs function
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
+import { faDownload } from '@fortawesome/free-solid-svg-icons'; // Import the download icon
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -6,6 +9,27 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+
+const DownloadButton = () => {
+  const pdfUrl =
+    "https://raw.githubusercontent.com/malmiwithanage/Resume/main/Resume%20Malmi%20Withanage.pdf"; // Replace with your actual GitHub raw PDF URL
+
+  const handleDownload = () => {
+    saveAs(pdfUrl, "Resume_Malmi_Withanage.pdf"); // Trigger the download using file-saver
+  };
+
+  return (
+  <motion.button
+    onClick={handleDownload}
+    className={`${styles.sectionButton} mt-4 bg-gradient-to-r from-[#b95ff6] to-[#02b495] hover:from-[#02b495] hover:to-[#b95ff6] text-white font-bold py-2 px-4 rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105`}
+  >
+    <FontAwesomeIcon icon={faDownload} className="mr-2" />
+    Download Resume
+  </motion.button>
+);
+
+}
+  
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -47,12 +71,17 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I’m a software dev who’s all about building awesome things with 
+        TypeScript, JavaScript, and frameworks like React, Node.js, and 
+        Three.js. I’m a fast learner and love vibing with teams to create 
+        slick, scalable, and user-friendly solutions that actually make a 
+        difference. Can’t wait to bring my skills to your next big project and make an impact!
       </motion.p>
+
+    <motion.div>
+    <DownloadButton />
+
+    </motion.div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

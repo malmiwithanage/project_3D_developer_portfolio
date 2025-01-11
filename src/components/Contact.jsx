@@ -33,16 +33,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_1d5szp7',
+        'template_6r2e5gl',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Malmi Withanage",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "malmiwithanage@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'i5NrsyqJQ-4t1K1xi'
       )
       .then(
         () => {
@@ -129,7 +129,14 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      
+
     </div>
+
+    
+    
+    
   );
 };
 

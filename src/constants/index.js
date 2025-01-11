@@ -16,13 +16,17 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
+  xdev,
   tesla,
   shopify,
   carrent,
-  jobit,
-  tripguide,
+  p3,
   threejs,
+  p1,
+  p2,
+  p4,
+  p5,
+  p6
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +46,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Full-Stack Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "3D Visual Developer",
     icon: creator,
   },
 ];
@@ -116,57 +120,21 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Developer Intern",
+    company_name: "2xDev Pvt Ltd",
+    icon: xdev,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Jun 2024 – Dec 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Assisted in multiple stages of the development process, from initial design to final product delivery.",
+      "Collaborated with senior developers to build efficient and scalable web applications.",
+      "Contributed to debugging, testing, and ensuring the quality of the codebase.",
+      "Worked with React.js and Node.js technologies to support project development."
     ],
   },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
+  
+  
 ];
 
 const testimonials = [
@@ -198,67 +166,123 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "AI Text Summarize Web Application",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "AI Text Summarization Web Application is designed to streamline information consumption by providing concise summaries of web pages. Users can input the URL of any web page containing readable content, and the application utilizes integrated AI APIs to generate a summary. This summary captures the essence of the original content.",
     tags: [
       {
-        name: "react",
+        name: "React.js",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: p1,
+    source_code_link: "https://github.com/malmiwithanage/ai_summerizer",
   },
   {
-    name: "Job IT",
+    name: "Hotel & Events Management System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The Hotel & Events Management System is tailored to facilitate customer wedding planning and organization. This comprehensive system enables users to effortlessly reserve venues, select from diverse wedding packages, and coordinate related services from catering to decorations and guest accommodations.",
     tags: [
       {
-        name: "react",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "PHP",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: p2,
+    source_code_link: "https://github.com/malmiwithanage/Y1S2-Project",
   },
   {
-    name: "Trip Guide",
+    name: "Task Management Android Application",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The Task Management Android Application is designed to streamline task organization and enhance productivity. This intuitive application allows users to efficiently manage tasks with essential functions such as adding, editing, deleting, reading, and searching tasks. It features a visually appealing and user-friendly interface to ensure a seamless user experience.",
     tags: [
       {
-        name: "nextjs",
+        name: "Kotlin",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Android",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: p3,
+    source_code_link: "https://github.com/malmiwithanage/ToDo-Android-Application",
+  },
+  {
+    name: "3D Portfolio Web Application",
+    description:
+      "The 3D Portfolio Web Application is a showcase of my work using immersive 3D elements to engage visitors. It presents my projects, personal information, and includes contact functionality through Email.js. The application aims to provide an interactive experience that highlights my skills and projects effectively.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Three.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: p4,
+    source_code_link: "https://github.com/malmiwithanage/Portfolio_",
+  },
+  {
+    name: "Hospital Management System",
+    description:
+      "The Hospital Management System is designed to streamline operations and enhance patient care by providing a comprehensive platform for healthcare professionals and patients. This system securely stores and manages detailed patient information, including medical history, treatments, prescriptions, and appointments.",
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: p5,
+    source_code_link: "https://github.com/malmiwithanage/Y2S1-Project/tree/main",
+  },
+  {
+    name: "Travel & Tourism Management System",
+    description:
+      "Travel and Tourism Management System tailored for Hotel Kaya Hikkaduwa offers a sophisticated platform designed to elevate guest experiences and streamline operations. This integrated system encompasses hotel bookings, restaurant reservations, curated travel packages, vehicle rentals, and event management, providing comprehensive services to guests and enhancing operational efficiency for the hotel.",
+    tags: [
+      {
+        name: "MERN Stack",
+        color: "blue-text-gradient",
+      },
+      
+    ],
+    image: p6,
+    source_code_link: "https://github.com/malmiwithanage/ITP-MalmiWithanage",
   },
 ];
 
