@@ -35,8 +35,15 @@ import p4 from "./p4.png"
 import p5 from "./p5.png"
 import p6 from "./p6.png"
 
+import s1 from "./s1.png"
+import s2 from "./s2.png"
+import s3 from "./s3.png"
+
 
 export {
+  s1,
+  s2,
+  s3,
   p1,
   logo,
   backend,

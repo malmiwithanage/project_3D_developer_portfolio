@@ -33,16 +33,15 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_1d5szp7',
-        'template_6r2e5gl',
+        'service_a52sgnr',
         {
           from_name: form.name,
           to_name: "Malmi Withanage",
           from_email: form.email,
-          to_email: "malmiwithanage@gmail.com",
+          to_email: "umnew1@gmail.com",
           message: form.message,
         },
-        'i5NrsyqJQ-4t1K1xi'
+        'HnKenAJQO2FYHwAvIzB4a'
       )
       .then(
         () => {
@@ -72,7 +71,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
+        <p className={styles.sectionSubText}>Get in touch</p> <br/>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
@@ -116,7 +115,7 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='mt-4 bg-gradient-to-r from-[#b95ff6] to-[#02b495] hover:from-[#02b495] hover:to-[#b95ff6] text-white font-bold py-2 px-4 rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105'
           >
             {loading ? "Sending..." : "Send"}
           </button>
