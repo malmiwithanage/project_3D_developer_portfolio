@@ -34,6 +34,7 @@ import p1 from "./p1.png"
 import p4 from "./p4.png"
 import p5 from "./p5.png"
 import p6 from "./p6.png"
+import p7 from "./p7.png"
 
 import s1 from "./s1.png"
 import s2 from "./s2.png"
@@ -75,5 +76,6 @@ export {
   p3,
   p4,
   p5,
-  p6
+  p6,
+  p7
 };

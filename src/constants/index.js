@@ -26,7 +26,8 @@ import {
   p2,
   p4,
   p5,
-  p6
+  p6,
+  p7
 } from "../assets";
 
 export const navLinks = [
@@ -165,6 +166,27 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Cactus Shop Web Application",
+    description:
+      "Ornamental Plant Design Web Application brings a fresh and personalized approach to home decor. Users can explore custom-designed ornamental plants tailored to their space, ensuring a unique blend of beauty and functionality. The platform combines expert design techniques and user preferences to deliver one-of-a-kind plant arrangements that enhance any home environment.",
+    tags: [
+      {
+        name: "Html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: p7,
+    source_code_link: "https://cacti-mei.netlify.app/", 
+  },
   {
     name: "AI Text Summarize Web Application",
     description:
